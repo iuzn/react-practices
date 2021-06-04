@@ -25,3 +25,12 @@ a {
 * {
   box-sizing: border-box;
 }
+
+@layer components {
+  .main {
+    @apply flex justify-center items-center h-screen mx-auto background;
+  }
+  .button {
+    @apply px-4 sm:px-8 py-5 text-4xl font-light text-white bg-black bg-opacity-20 backdrop-filter backdrop-blur rounded-2xl transform scale-100 transition hover:scale-105 active:scale-110 focus:outline-none;
+  }
+}
